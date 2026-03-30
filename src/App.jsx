@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './component/Navbar/Navbar'
+import Banner from './component/Banner/Banner'
 
 function App() {
 
   return (
     <>
-      <h1 className='text-2xl bg-amber-300'>Hello</h1>
-      <button className='btn btn-accent'>How are you?</button>
+      <div className="m-[1%]">
+        <Navbar/>
+        <Banner/>
+      </div>
     </>
   )
 }
