@@ -10,7 +10,12 @@ import name6 from '../../assets/products/social-media.png'
 const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProduct, setAddedProduct}) => {
     
 
-    
+    const handleRemove = (element) => {
+        element.isAdded = false
+        setAddedProduct(addedProduct.filter(x => x.id != element.id))
+        setAddedNumber(x => x - 1)
+        setTotalPrice(totalPrice - element.price)
+    }
     const icons = {
             1: name1,
             2: name2,
