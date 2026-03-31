@@ -20,7 +20,7 @@ const Step = () => {
                     <p className='w-[90%] opacity-70 text-center'>Sign up for free in seconds. No credit card required to get started.</p>
                 </div>
                 <div className="flex flex-col justify-around items-center gap-1 relative p-2 card bg-base-100 shadow-md">
-                    <div className="absolute top-2 right-2 w-8 h-8 flex justify-center items-center bg-violet-600 rounded-full"><p className='text-[20px]'>01</p></div>
+                    <div className="absolute top-2 right-2 w-8 h-8 flex justify-center items-center bg-violet-600 rounded-full"><p className='text-[20px]'>02</p></div>
                     <div className="bg-violet-300 rounded-full p-3 mt-10">
                         <img className='' src={packages} alt="" />
                     </div>
@@ -28,7 +28,7 @@ const Step = () => {
                     <p className='w-[90%] opacity-70 text-center'>Browse our catalog and select the tools that fit your needs.</p>
                 </div>
                 <div className="flex flex-col justify-around items-center gap-1 relative p-2 card bg-base-100 shadow-md">
-                    <div className="absolute top-2 right-2 w-8 h-8 flex justify-center items-center bg-violet-600 rounded-full"><p className='text-[20px]'>01</p></div>
+                    <div className="absolute top-2 right-2 w-8 h-8 flex justify-center items-center bg-violet-600 rounded-full"><p className='text-[20px]'>03</p></div>
                     <div className="bg-violet-300 rounded-full p-3 mt-10">
                         <img className='' src={rocket} alt="" />
                     </div>
