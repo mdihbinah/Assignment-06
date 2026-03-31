@@ -1,7 +1,8 @@
 # Project Name: DigiTools
 
 ##  Description
-    A modern e-commerce UI built with React based on a Figma design. Users can browse products, add them to cart, and manage purchases with a smooth interactive experience.
+    A modern e-commerce UI built with React based on a Figma design. Users can browse products, 
+    add them to cart, and manage purchases with a smooth interactive experience.
 
 ##  Technology Stack:
     Frontend: React.js
