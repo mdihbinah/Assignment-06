@@ -3,7 +3,7 @@ import { IoCheckmarkOutline } from "react-icons/io5";
 
 const Card = ({card}) => {
     return (
-        <div className={`relative flex flex-col gap-4 bg-gray-100 p-3 rounded-lg ${card.badge? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': ''}`}>
+        <div className={`relative hover:translate-y-[-10px] duration-900 flex flex-col gap-4 bg-gray-100 p-3 rounded-lg ${card.badge? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white': ''}`}>
             {
                 card.badge ? <div className='absolute w-[40%] bg-yellow-200 p-2 rounded-full text-center left-[30%] -top-4 text-red-500'>{card.badge}</div> :''
             }

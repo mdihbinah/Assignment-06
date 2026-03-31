@@ -27,7 +27,7 @@ const Product = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, produc
 
     return (
         <div>
-            <div className=" flex flex-col card min-h-95 min-w-60 border-2 p-4 space-y-1 rounded-xl relative">
+            <div className="hover:translate-y-[-10px] duration-900 flex flex-col card min-h-95 min-w-60 border-2 p-4 space-y-1 rounded-xl relative">
                 <button className={`btn ${product.tag == 'Popular'? 'btn-secondary' : (product.tag == 'New' ? 'btn-accent' : 'btn-warning')} text-black absolute top-1 right-1`}>{product.tag}</button>
                 <img className='w-8 h-8 mt-10' src={icons[product.id]} alt="" />
                 <h1 className='text-xl font-semibold'>{product.name}</h1>
