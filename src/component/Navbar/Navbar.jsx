@@ -1,11 +1,11 @@
 import React from 'react';
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar = ({addedNumber, setAddedNumber}) => {
     return (
         <div className="flex justify-between navbar bg-base-100 shadow-sm">
             <div className="flex justify-between">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="text-xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text">DigiTools</a>
             </div>
 
             <div className="">
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div tabIndex={0} role="button" className="btn btn-ghost">
                     <div className="indicator mr-5">
                     <CiShoppingCart className='w-[30px] h-[30px]' />
-                    {/* <span className="badge badge-sm indicator-item">0</span> */}
+                    <span className={`badge badge-sm indicator-item bg-yellow-200 ${addedNumber == 0? 'hidden' : ''}`} >{addedNumber}</span>
                     </div>
                 </div>
                 {/* <div
@@ -44,7 +44,7 @@ const Navbar = () => {
                     {/* className="avatar" */}
                     <div className="flex gap-2">
                        <button className='btn btn-ghost btn-circle'>Login</button> 
-                       <button className='btn btn-ghost bg-linear-to-r from-violet-800 to-violet-500'>Get Started</button> 
+                       <button className='btn btn-ghost bg-linear-to-r from-violet-800 to-violet-500 text-white'>Get Started</button> 
                     </div>
                 </div>
                 <ul
