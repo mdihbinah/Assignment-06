@@ -8,7 +8,12 @@ import name5 from '../../assets/products/portfolio.png'
 import name6 from '../../assets/products/social-media.png'
 
 const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProduct, setAddedProduct}) => {
-    
+    const allRemove = () => {
+        addedProduct.map(ele => ele.isAdded = false)
+        setAddedNumber(0)
+        setTotalPrice(0)
+        setAddedProduct([])
+    }
 
     const handleRemove = (element) => {
         element.isAdded = false
