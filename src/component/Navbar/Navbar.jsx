@@ -3,7 +3,7 @@ import { CiShoppingCart } from "react-icons/ci";
 
 const Navbar = ({addedNumber, setAddedNumber}) => {
     return (
-        <div className="flex justify-between navbar bg-base-100 shadow-sm">
+        <div className="flex justify-between items-center p-3 bg-base-100 shadow-sm mx-[3%]">
             <div className="flex justify-between">
                 <a className="text-xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text">DigiTools</a>
             </div>
@@ -47,7 +47,7 @@ const Navbar = ({addedNumber, setAddedNumber}) => {
                        <button className='btn btn-ghost bg-linear-to-r from-violet-800 to-violet-500 text-white'>Get Started</button> 
                     </div>
                 </div>
-                <ul
+                {/* <ul
                     tabIndex="-1"
                     className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
                     <li>
@@ -58,7 +58,7 @@ const Navbar = ({addedNumber, setAddedNumber}) => {
                     </li>
                     <li><a>Settings</a></li>
                     <li><a>Logout</a></li>
-                </ul>
+                </ul> */}
                 </div>
             </div>
         </div>

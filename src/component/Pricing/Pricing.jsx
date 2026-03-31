@@ -5,7 +5,7 @@ const Pricing = ({pricingData}) => {
     const pricingCards = use(pricingData).plans
     console.log(pricingCards);
     return (
-        <div className="mt-5 space-y-8">
+        <div className="my-5 mx-[3%] space-y-8">
             <div>
                 <div className=" text-center">
                     <h1 className='text-3xl font-bold'>Simple, Transparent Pricing</h1>

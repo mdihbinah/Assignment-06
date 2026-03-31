@@ -6,6 +6,7 @@ import name3 from '../../assets/products/shopping-cart.png'
 import name4 from '../../assets/products/operation.png'
 import name5 from '../../assets/products/portfolio.png'
 import name6 from '../../assets/products/social-media.png'
+import { toast } from 'react-toastify';
 
 const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProduct, setAddedProduct}) => {
     const allRemove = () => {
@@ -13,6 +14,7 @@ const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProd
         setAddedNumber(0)
         setTotalPrice(0)
         setAddedProduct([])
+        toast(`Remove all from Cart.`)
     }
 
     const handleRemove = (element) => {
@@ -20,6 +22,7 @@ const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProd
         setAddedProduct(addedProduct.filter(x => x.id != element.id))
         setAddedNumber(x => x - 1)
         setTotalPrice(totalPrice - element.price)
+        toast(`Remove ${element.name} from Cart.`) 
     }
     const icons = {
             1: name1,
@@ -35,7 +38,7 @@ const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProd
             <h1 className='text-xl font-bold'>Your Cart</h1>
             {
                 addedProduct.map((ele, index) => {
-                    return <div key={index} className="">
+                    return <div key={index} className="hover:scale-[1.03] duration-[.5s]">
 
                         <div className={`flex justify-between items-center gap-5 border-1 rounded-xl p-3 ${addedProduct.length == 0? 'hidden' : ''}`}>
                             <div className="flex items-center gap-5">

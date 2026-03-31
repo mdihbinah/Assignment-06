@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import { TiTickOutline } from "react-icons/ti";
 import name1 from '../../assets/products/writing.png'
 import name2 from '../../assets/products/design-tool.png'
@@ -14,6 +15,7 @@ const Product = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, produc
         setAddedProduct([...addedProduct, product])
         setAddedNumber(x => x + 1)
         setTotalPrice(totalPrice + product.price)
+        toast("Product added to Cart!")
     }
 
     const icons = {
@@ -26,17 +28,17 @@ const Product = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, produc
     }
 
     return (
-        <div>
-            <div className="hover:translate-y-[-10px] duration-900 flex flex-col card min-h-95 min-w-60 border-2 p-4 space-y-1 rounded-xl relative">
+        <div className=''>
+            <div className="hover:translate-y-[-10px] bg-white duration-[.5s] flex flex-col min-h-95 border-2 p-4 space-y-1 rounded-xl relative">
                 <button className={`btn ${product.tag == 'Popular'? 'btn-secondary' : (product.tag == 'New' ? 'btn-accent' : 'btn-warning')} text-black absolute top-1 right-1`}>{product.tag}</button>
-                <img className='w-8 h-8 mt-10' src={icons[product.id]} alt="" />
+                <img className='w-8 h-8 mt-10' src={icons[product.id]} alt={product.name} />
                 <h1 className='text-xl font-semibold'>{product.name}</h1>
                 <p className='text-xs opacity-70'>{product.description}</p>
                 <h2 className='my-2'><span className='text-xl font-semibold'>${product.price}</span><span className='text-xl opacity-70'>/{product.period}</span></h2>
                 <ul className='flex-1'>
                     {product.features.map((ele, index) => <li key={index} className='flex items-center'><TiTickOutline />{ele}</li>)}
                 </ul>
-                <div onClick={()=> {product.isAdded?'':handleCart(product)}} className='bg-linear-to-r from-[#4F39F6] to-[#9514FA] p-2 rounded-full text-center text-white'>{product.isAdded? 'Added to Cart': 'Buy Now'}</div>
+                <div onClick={()=> {product.isAdded?'':handleCart(product)}} className={`p-2 rounded-full text-center text-white ${product.isAdded?'bg-green-400' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] '}`}>{product.isAdded? 'Added to Cart': 'Buy Now'}</div>
             </div>
         </div>
     );
