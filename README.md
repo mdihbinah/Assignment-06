@@ -1,6 +1,6 @@
 # Project Name: DigiTools
 
-##  Description
+##  Description:
     A modern e-commerce UI built with React based on a Figma design. Users can browse products, 
     add them to cart, and manage purchases with a smooth interactive experience.
 
@@ -11,7 +11,7 @@
     Notifications: React-Toastify
     Icons: React-Icons
 
-## Key Features
+## Key Features:
     1. Dynamic Toggling System: 
         Toggle Product and Cart using Conditional-Rendering without page reload.
     2. Cart Management: 
