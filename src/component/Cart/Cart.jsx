@@ -34,7 +34,7 @@ const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProd
         }
 
     return (
-        <div className='bg-gray-100 p-5 opacity-95 rounded-2xl space-y-3'>
+        <div className='bg-gray-100 p-5 opacity-95 rounded-2xl space-y-3 mx-[3%]'>
             <h1 className='text-xl font-bold'>Your Cart</h1>
             {
                 addedProduct.map((ele, index) => {
@@ -63,7 +63,7 @@ const Cart = ({totalPrice, setTotalPrice, addedNumber, setAddedNumber, addedProd
                 <div onClick={() => {allRemove()}} className=" p-2 text-xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-center rounded-full">Proceed to Checkout</div>
             </div>
 
-            <div className={` flex flex-col justify-center items-center gap-2 ${addedProduct.length == 0? '' : 'hidden'}`}>
+            <div className={`mx- flex flex-col justify-center items-center gap-2 opacity-70 ${addedProduct.length == 0? '' : 'hidden'}`}>
                 <CiShoppingCart className='w-[100px] h-[100px]' />
                 <h1>Your cart is empty.</h1>
             </div>

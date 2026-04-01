@@ -8,12 +8,12 @@ const Stats = () => {
                     <h1 className='text-xl font-bold'>50K+</h1>
                     <p className='opacity-70'>Active Users</p>
                 </div>
-                <div class="divider divider-horizontal divider-neutral"></div>
+                <div class="w-px bg-gray-300 m-2"></div>
                 <div className="">
                     <h1 className='text-xl font-bold'>200+</h1>
                     <p className='opacity-70'>Premium Tools</p>
                 </div>
-                <div class="divider divider-horizontal divider-neutral"></div>
+                <div class="w-px bg-gray-300 m-2"></div>
                 <div className="">
                     <h1 className='text-xl font-bold'>4.9</h1>
                     <p className='opacity-70'>Rating</p>

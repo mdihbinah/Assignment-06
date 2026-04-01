@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="">
-                    <div className="divider m-0">
+                    <div className="h-px bg-gray-400 m-2">
                     </div>
                     <div className="flex justify-between">
                         <h3>© 2026 Digitools. All rights reserved.</h3>
