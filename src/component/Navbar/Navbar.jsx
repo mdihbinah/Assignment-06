@@ -1,14 +1,26 @@
-import React from 'react';
-import { CiShoppingCart } from "react-icons/ci";
+import React, { useState } from 'react';
+import { CiMenuFries, CiShoppingCart } from "react-icons/ci";
 
 const Navbar = ({addedNumber, setAddedNumber}) => {
+    const [show, setShow] = useState(false)
+
     return (
         <div className="flex justify-between items-center p-3 bg-base-100 shadow-sm mx-[3%]">
-            <div className="flex justify-between">
+            <div className="relative flex justify-between gap-3">
+                <button className='lg:hidden' onClick={() => {setShow(!show)}} ><CiMenuFries/></button>
+                <div className={`absolute -bottom-53 bg-red-400 p-2 text-center rounded-[5px] ${show ? '' : 'hidden'}`}>
+                    <ul className='flex flex-col gap-5'>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul> 
+                </div>
                 <a className="text-xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-transparent bg-clip-text">DigiTools</a>
             </div>
 
-            <div className="">
+            <div className="hidden lg:flex">
                <ul className='flex gap-5'>
                 <li><a href="">Products</a></li>
                 <li><a href="">Features</a></li>

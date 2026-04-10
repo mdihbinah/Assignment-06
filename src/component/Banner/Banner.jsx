@@ -4,7 +4,7 @@ import { CiPlay1 } from "react-icons/ci";
 
 const Banner = () => {
     return (
-        <div className='grid grid-cols-2 gap-10 mx-[3%] mt-5'>
+        <div className='grid md:grid-cols-2 gap-10 mx-[3%] mt-5'>
             <div className="flex justify-around items-center">
                 <div className="w-[80%] flex flex-col gap-2">
                     <div className="w-[80%] flex justify-center items-center gap-5 bg-violet-200 text-violet-600 text-center rounded-4xl p-1">
@@ -24,7 +24,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
+            <div className="flex justify-center">
                 <img className='w-[80%] h-[95%] shadow-xl' src={banner} alt="" />
             </div>
         </div>
