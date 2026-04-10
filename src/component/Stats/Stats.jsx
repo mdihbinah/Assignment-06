@@ -3,7 +3,7 @@ import React from 'react';
 const Stats = () => {
     return (
         <div className='bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
-            <div className='space-y-5 md:flex justify-between p-8 mx-[20%] text-white'>
+            <div className='space-y-5 md:flex justify-between p-8 mx-[20%] text-center text-white'>
                 <div className="">
                     <h1 className='text-xl font-bold'>50K+</h1>
                     <p className='opacity-70'>Active Users</p>
